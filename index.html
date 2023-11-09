@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Poppins:wght@100&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="fullcontainer">
+      <div class="container">
+        <nav>
+          <div class="toggle" id="toggle">
+            <input type="checkbox" name="" id="input" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul id="nav">
+            <li><a href="#">Mitra Kami</a></li>
+            <li><a href="#">Win</a></li>
+            <li><a href="#">Mulai Berjalan</a></li>
+            <li><a href="#">Promosi</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+          <div class="logo">
+            <h3>Toko Logo</h3>
+          </div>
+        </nav>
+        <div class="hero">
+          <img name="slide" class="slide" />
+        </div>
+        <div class="content">
+          <div class="produkyangsayajual">
+            <h3>My Produk</h3>
+          </div>
+          <main>
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk1.png" alt="your product" /></a>
+              <h3>Produk Logo 1</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $99.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo1','$99.99','Detail lengkap tentang produk ini','img/produk1.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo1', 99.0)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="logo">
+              <a href="#"><img src="img/produk2.png" alt="your product" /></a>
+              <h3>Produk Logo 2</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $79.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo2','$79.99','Detail lengkap tentang produk ini','img/produk2.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo2', 79.0)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="logo">
+              <a href="#"><img src="img/produk3.png" alt="your product" /></a>
+              <h3>Produk Logo 3</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $39.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo3','$39.99','Detail lengkap tentang produk ini','img/produk3.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo3', 99.0)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="logo">
+              <a href="#"><img src="img/produk4.png" alt="your product" /></a>
+              <h3>Produk Logo 4</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $29.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo4','$29.99','Detail lengkap tentang produk ini','img/produk4.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo4', 29.0)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="logo">
+              <a href="#"><img src="img/produk5.png" alt="your product" /></a>
+              <h3>Produk Logo 5</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $19.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo5','$19.99','Detail lengkap tentang produk ini','img/produk5.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo5', 19.0)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="logo">
+              <a href="#"><img src="img/produk6.png" alt="your product" /></a>
+              <h3>Produk Logo 6</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $9.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo6','$9.99','Detail lengkap tentang produk ini','img/produk6.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo6', 9.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk7.png" alt="your product" /></a>
+              <h3>Produk Logo 7</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $59.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo7','$59.99','Detail lengkap tentang produk ini','img/produk7.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo7', 59.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk8.png" alt="your product" /></a>
+              <h3>Produk Logo 8</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $39.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo8','$39.99','Detail lengkap tentang produk ini','img/produk8.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo8', 39.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk9.png" alt="your product" /></a>
+              <h3>Produk Logo 9</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $9.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo9','$9.99','Detail lengkap tentang produk ini','img/produk9.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo9', 9.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk10.png" alt="your product" /></a>
+              <h3>Produk Logo 10</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $29.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo10','$29.99','Detail lengkap tentang produk ini','img/produk10.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang(Logo10', 29.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk11.png" alt="your product" /></a>
+              <h3>Produk Logo 11</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $89.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo11','$89.99','Detail lengkap tentang produk ini','img/produk11.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo11', 89.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk12.png" alt="your product" /></a>
+              <h3>Produk Logo 12</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $19.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo12','$19.99','Detail lengkap tentang produk ini','img/produk12.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo12', 19.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk13.png" alt="your product" /></a>
+              <h3>Produk Logo 13</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $59.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo13','$59.99','Detail lengkap tentang produk ini','img/produk13.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo13', 59.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk14.png" alt="your product" /></a>
+              <h3>Produk Logo 14</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $59.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo14','$59.99','Detail lengkap tentang produk ini','img/produk14.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo14', 59.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk15.png" alt="your product" /></a>
+              <h3>Produk Logo 15</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $99.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo15','$99.99','Detail lengkap tentang produk ini','img/produk15.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo15', 99.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk16.png" alt="your product" /></a>
+              <h3>Produk Logo 16</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $79.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo','$79.99','Detail lengkap tentang produk ini','img/produk16.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo16', 79.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk17.png" alt="your product" /></a>
+              <h3>Produk Logo 17</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $19.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo17','$19.99','Detail lengkap tentang produk ini','img/produk17.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo17', 19.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk18.png" alt="your product" /></a>
+              <h3>Produk Logo 18</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $9.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo18','$9.99','Detail lengkap tentang produk ini','img/produk18.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo18', 9.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk19.png" alt="your product" /></a>
+              <h3>Produk Logo 19</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $39.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo19','$39.99','Detail lengkap tentang produk ini','img/produk19.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo19', 39.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk20.png" alt="your product" /></a>
+              <h3>Produk Logo 20</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $49.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo20','$49.99','Detail lengkap tentang produk ini','img/produk20.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo20', 49.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+
+            <section class="product" data-kategori="vector">
+              <a href="#"><img src="img/produk21.png" alt="your product" /></a>
+              <h3>Produk Logo 21</h3>
+              <p>Deskripsi singkat produk ini</p>
+              <p class="price">Harga : $99.99</p>
+              <button
+                class="tombol-beli"
+                onclick="tampilkan('Logo21','$99.99','Detail lengkap tentang produk ini','img/produk21.png')"
+              >
+                Detail Produk
+              </button>
+              <button
+                class="tombol-keranjang"
+                onclick="tambahkanProdukKeKeranjang('Logo21', 99.99)"
+              >
+                Beli Sekarang
+              </button>
+            </section>
+          </main>
+
+          <sidebar>
+            <div class="pilihan">
+              <h3>Kategori</h3>
+              <input
+                type="text"
+                id="cariBarang"
+                placeholder="Cari Logo"
+                onkeyup="cariBarang()"
+              />
+              <button onclick="filterKategori('all')">Semua</button>
+              <br />
+              <button onclick="filterKategori('logo')">Logo</button>
+              <br />
+              <button onclick="filterKategori('vector')">Vector</button>
+            </div>
+            <div class="keranjang">
+              <h3>Keranjang Belanja</h3>
+              <ul id="daftar-keranjang"></ul>
+              <p>Total Belanja: <span id="total-belanja">$0.00</span></p>
+              <button id="checkout" onclick="checkout()" href="checkout/chekout.html">Checkout</button>
+            </div>
+          </sidebar>
+        </div>
+        <footer>
+          <div class="nama-toko">
+            <h3>Toko Logo</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident, ad deserunt totam, adipisci praesentium ipsum placeat
+              recusandae excepturi asperiores, amet possimus. Debitis, facere
+              atque molestias.
+            </p>
+          </div>
+          <div class="footer-link">
+            <section class="footer1">
+              <h3>Bantuan</h3>
+              <a href="#">Mitra Kami</a>
+              <a href="#">Win</a>
+              <a href="#">Mulai Berjualan</a>
+              <a href="#">Promosis</a>
+              <a href="#">Kontak</a>
+            </section>
+            <section class="footer1">
+              <h3>Legal</h3>
+              <a href="#">Kebijakan Privasi</a>
+              <a href="#">Ketentuan Pengguna</a>
+            </section>
+            <section class="footer1">
+              <h3>Footer Link</h3>
+              <a href="#">Link-1</a>
+              <a href="#">Link-2</a>
+              <a href="#">Link-3</a>
+              <a href="#">Link-4</a>
+              <a href="#">Link-5</a>
+            </section>
+            <section class="footer1">
+              <h3>Footer Link</h3>
+              <a href="#">Link-1</a>
+              <a href="#">Link-2</a>
+              <a href="#">Link-3</a>
+              <a href="#">Link-4</a>
+              <a href="#">Link-5</a>
+            </section>
+            <section class="footer1">
+              <h3>Footer Link</h3>
+              <a href="#">Link-1</a>
+              <a href="#">Link-2</a>
+              <a href="#">Link-3</a>
+              <a href="#">Link-4</a>
+              <a href="#">Link-5</a>
+            </section>
+            <section class="footer1">
+              <h3>Footer Link</h3>
+              <a href="#">Link-1</a>
+              <a href="#">Link-2</a>
+              <a href="#">Link-3</a>
+              <a href="#">Link-4</a>
+              <a href="#">Link-5</a>
+            </section>
+          </div>
+          <div class="medsos">
+            <div class="me1">
+              <a href=""><i class="ph ph-facebook-logo"></i></a>
+            </div>
+            <div class="me1">
+              <a href=""><i class="ph ph-instagram-logo"></i></a>
+            </div>
+            <div class="me1">
+              <a href=""><i class="ph ph-whatsapp-logo"></i></a>
+            </div>
+          </div>
+          <div class="akhir">
+            <p>
+              Copyright 2023 &copy; Toko Online.Jasa desain logo terpercaya.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
