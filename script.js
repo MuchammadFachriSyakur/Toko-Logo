@@ -9,10 +9,10 @@ var images = [];
 var time = 1500;
     
     //menangkap daftar gambar
-images[0] = "img/slider1.png";
-images[1] = "img/slider2.png";
-images[2] = "img/slider3.png";
-images[3] = "img/slider4.png";
+images[0] = "slider1.png";
+images[1] = "slider2.png";
+images[2] = "slider3.png";
+images[3] = "slider4.png";
     
 function changeImage(){
    document.slide.src = images[i];
