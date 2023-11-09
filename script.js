@@ -32,15 +32,8 @@ function tampilkan(namaProduk, hargaProduk, detailProduk, gambarProduk){
   /nggawe popup e mben biso ngatur elemen e/
   const popup = document.createElement('div');
   popup.className = 'popup';
-  popup.innerHTML = `
-  <div class="popup-content">
-      <span class="popup-close" onclick="tutupPopup()">&times;</span>
-      <img src="${gambarProduk}" alt+"${namaProduk}">
-      <h2>${namaProduk}</h2>
-      <p class="price">Harga: ${hargaProduk}</p>
-      <p>${detailProduk}</p>
-      <button class="tombol-beli">Beli Sekarang</button>
-      </div> `;
+  popup.innerHTML = `<div class="popup-content"><span class="popup-close" onclick="tutupPopup()">&times;</span><img src="${gambarProduk}" alt+"${namaProduk}"><h2>${namaProduk}</h2>
+      <p class="price">Harga: ${hargaProduk}</p><p>${detailProduk}</p><button class="tombol-beli">Beli Sekarang</button></div>`;
   
   document.body.appendChild(popup);
 }
